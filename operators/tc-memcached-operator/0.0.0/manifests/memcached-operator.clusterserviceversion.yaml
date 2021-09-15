@@ -1,4 +1,3 @@
----
 apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
@@ -97,7 +96,7 @@ spec:
                 - --upstream=http://127.0.0.1:8080/
                 - --logtostderr=true
                 - --v=10
-                image: gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+                image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
                 name: kube-rbac-proxy
                 ports:
                 - containerPort: 8443
@@ -110,7 +109,7 @@ spec:
                 - --leader-elect
                 command:
                 - /manager
-                image: quay.io/tony_campbell/memcached-operator:0.0.1
+                image: quay.io/tony_campbell/memcached-operator@sha256:d9e44e63a31bd0f86c3b2dd4d39a62a7fd8a4eab8a1065e3f5d14e912355cb4d
                 livenessProbe:
                   httpGet:
                     path: /healthz
@@ -191,3 +190,8 @@ spec:
   provider:
     name: Open Try
   version: 0.0.1
+  relatedImages:
+  - name: kube-rbac-proxy
+    image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
+  - name: manager
+    image: quay.io/tony_campbell/memcached-operator@sha256:d9e44e63a31bd0f86c3b2dd4d39a62a7fd8a4eab8a1065e3f5d14e912355cb4d
