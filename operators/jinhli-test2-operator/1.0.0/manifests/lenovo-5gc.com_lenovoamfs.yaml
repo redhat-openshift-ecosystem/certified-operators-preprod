@@ -1,0 +1,49 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  creationTimestamp: null
+  name: lenovoamfs.lenovo-5gc.com
+spec:
+  group: lenovo-5gc.com
+  names:
+    kind: Lenovoamf
+    listKind: LenovoamfList
+    plural: lenovoamfs
+    singular: lenovoamf
+  scope: Namespaced
+  subresources:
+    status: {}
+  version: v1alpha1
+  versions:
+  - name: v1alpha1
+    # Each version can be enabled/disabled by Served flag.
+    served: true
+    # One and only one version must be marked as the storage version.
+    storage: true
+  validation:
+    openAPIV3Schema:
+      description: Lenovoamf is the Schema for the lenovoamfs API
+      properties:
+        apiVersion:
+          description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+          type: string
+        kind:
+          description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+          type: string
+        metadata:
+          type: object
+        spec:
+          description: Spec defines the desired state of Lenovoamf
+          type: object
+          x-kubernetes-preserve-unknown-fields: true
+        status:
+          description: Status defines the observed state of Lenovoamf
+          type: object
+          x-kubernetes-preserve-unknown-fields: true
+      type: object
+status: 
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: null
+  storedVersions: null

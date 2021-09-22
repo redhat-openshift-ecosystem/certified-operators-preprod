@@ -1,8 +1,8 @@
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: ako-operator-metrics-reader
+  name: operator-amf-metrics-reader
 rules:
 - nonResourceURLs:
   - /metrics

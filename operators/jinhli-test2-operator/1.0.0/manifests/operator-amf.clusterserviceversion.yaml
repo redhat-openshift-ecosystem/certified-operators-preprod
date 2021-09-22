@@ -1,0 +1,230 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: |-
+      [
+        {
+          "apiVersion": "lenovo-5gc.com/v1alpha1",
+          "kind": "Lenovoamf",
+          "metadata": {
+            "name": "lenovoamf-sample"
+          },
+          "spec": {
+            "affinity": {},
+            "autoscaling": {
+              "enabled": false,
+              "maxReplicas": 100,
+              "minReplicas": 1,
+              "targetCPUUtilizationPercentage": 80
+            },
+            "fullnameOverride": "",
+            "image": {
+              "pullPolicy": "IfNotPresent",
+              "repository": "nginx",
+              "tag": ""
+            },
+            "imagePullSecrets": [],
+            "ingress": {
+              "annotations": {},
+              "enabled": false,
+              "hosts": [
+                {
+                  "host": "chart-example.local",
+                  "paths": []
+                }
+              ],
+              "tls": []
+            },
+            "nameOverride": "",
+            "nodeSelector": {},
+            "podAnnotations": {},
+            "podSecurityContext": {},
+            "replicaCount": 1,
+            "resources": {},
+            "securityContext": {},
+            "service": {
+              "port": 80,
+              "type": "ClusterIP"
+            },
+            "serviceAccount": {
+              "annotations": {},
+              "create": true,
+              "name": ""
+            },
+            "tolerations": []
+          }
+        }
+      ]
+    capabilities: Basic Install
+    categories: Database
+    description: lenovo cnbu operator amf
+    containerImage: docker.io/maowei3/operator5gcore@sha256:654b78a2539a006bebd473ae0bb82b1e5aa3b2a41916ee406e8438c3594fc35f
+    createdAt: 2021-2-26T10:12:00:00
+    support: lenovo cnbu team
+    repository: https://hub.docker.com/repository/docker/maowei3/operator5gcore
+    operators.operatorframework.io/builder: operator-sdk-v1.2.0
+    operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
+  name: operator-amf1.v0.0.1
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - kind: Lenovoamf
+      name: lenovoamfs.lenovo-5gc.com
+      version: v1alpha1
+  description: lenovo cnbu 5gc amf operator
+  displayName: lenovoamfoperator
+  icon:
+  - base64data: iVBORw0KGgoAAAANSUhEUgAAAPoAAABQCAMAAAAHtZiHAAACx1BMVEXiIxr////xkY3jLCPoUkrscGruf3rvhH/ufXfsbWfoUEnlPDTrZmDue3bqYlzlOTHoUUrufnnufHbraWPnSULiJh3iJRznRj/rZ2HtenXugHvscWvoVE3jLSXlNi7vhoH4zcv//Pz//Pv5z83lODD98vLufnjkMyvwi4f63Nr63Nvwj4rkNCzvhYD++/v+9fT2vbrscm3jKiHvg37mQDnmQzvjJx7ra2X2uLX98PD//f350c/wi4blOzPzpKD++PjkMyrzpKH87Ovvh4LjKB/xlJD++vrkNS3iJh785+b0rarlOjL97ezkMCf3w8D3v73jLCTtdW/98/L73dzoT0j1s7D74eDiJBv74+L1sK361tX+9vbympbwjon509H4x8X0qKTtc27pWFLpVU7pWFHpVk/sa2X+9/ftd3Hynpr2t7T62tjzpaL619b//v7oTUbnTETzo5/rZF3jKSDqX1j0qqfpW1TsbmjynJj86en75OP97+7sbGb+9vX86ejlOTDkLyf+9PPjLiblNy/74+H50tD7397scmz50M/tdnDnR0DkMSj2vrzqXlfmPjbwjYj1tbLzpqP2u7j2vbv1sq/62df97u3rZV74zMrteHLnRj73w8HzoZ3wjIj86+r0qaXnS0Pxl5LpWlP0q6jugXz4ysfyoJzviIPxlpH++fn1sa7ymZX50M7sb2n2ubbym5f2vLnjKyLpWVPmRDzqXVbmRT3xmJT0rqv3wL351NL51dP4ycb1t7Tzp6PmPzj85eT4yMb1sKzynZnmQjr61tTqX1n86OfviYT74uDqYVv3xcPnSEHpV1DmPzf1tLHoTkf74N/mQTn3xsTnTEX5zsz629nraGL86unvgn34y8nyn5vtdG7qYFroUkvwkYz62Nfzop7qY1znSkLxko7rZV/teHPxlZH85uXxl5P97+/oU0z3xMLxk4/nBBiUAAAGFUlEQVR4AezPUwLDYBAA4f3j2kZSu/e/XW2b870vRgAAAAAAAAB8HrWgkf43SCeddNJJJ103TMt2fH5dTgkEHTsUjhxdEjVjdjyRTMlt0plszs4XiqXXpZddr6LmqjW3LmuNhaaItNodNdft9Q8sGXhDNTduxx6AI1nXMI4/z7F94hzMXStYBhvdWcfJjblmcGzbtm37nLVt2yybV/2+1V/P9FTN1lZf9q8YDP7dn2ZSUtPSYenfVQ2AaWBXlQDLoMFDMmjJzMoe+i9J75OTS1NuTh4UxdmIObsrbSl9Y0LC83NpKvhz0Pp9P/d3MIxi+AgAwMhLR9HUb/QY79PPzWCowovC0ouK6VRSCkNZOUNVVAIA/kJRVQ1bdQ1FLQDgijqGqj+n2tv06ga6yDwn5OGNTQzVHIS6soUu+rUCwFiqcbCNp5oAABMn0UVt0NP0HLqb7Hx4PcNNgZZPpbtzAGAaxXTYWihmAEBrG12lBj1Mv5oRDG/Xh0fU1gFLJyPIvA7AWRQZ10OldzWvzg2ZjOBG79IrA1RZvSfedPMtt1LNuDIsvd9t026nYSr+6Q7a7uyVdRdtGXcD96RQDIY6l+Le+4D7jSfNfODBhwK0PexVevUjFBXj5XYMa6N4NCR9xh3JAB67ZRJVIA8AHi+geuLJQQCeeror1TMAnqV4Dup5ihwAL1BVPZoHIPnMF6leetyj9JcpXimCepVimjO980pYXquimggAp1HUx0GMeJ2qHeig6Ndd/x6guAJop3ojCMuVb1Kd5lG6blhv9YHtbYp3zPQh1VBDCyneBRDU4Rp4DwpBbef7AK6huBSWDyg+BPA+xUdQxn+8NMiT9D6ZxthW6R9TfGI8/NO7YXuU4jMAcRSfw9BHL8i9QSCN4gtYsii+BNJT9IjoiPyK4mVP0ifSUhiEGvD17TRvCcU3MHx7pzF583WB6wNTNsV3wPWFFN8DAGIpCoLADxRnwvTjtToLPEn/iZafYYl5+Zc22lJijCMNTL8a6b/pjIBDH32mq40X4jAAwLvmuNJpnZsOh99p+ZMn6X/oKdVae7JraGgrjqs2z/Cm3410HQEJMBiXZCaAWXodaqoBxMymJfMpAKNpmQOnHjrZPUmfQ8u5AJLmDqchY958AFGkD6K43O266uZfQjEewHsUqQDwjbFumM6k8CRdC84sjV9A04OTvwWiS7+HYiGcfjY385cp3jaX9IsA4HVjdJgu8DRd97amrjTkjr4EQLTpiHTu+sW8mzG30VKejm/vpeWBGHMpfw4G43wx3JP00QxXdXUecDLpi8wPMwad0A0yc8W59kheDAB4g5bb4DSFliWepGczROY3S2OAk0tfRstD1TAtp2h1fmPxPHQ4DLd2w27Guc/UU7dVT9JX0KHw3aegok9vpLgDppkUKwEYB/XAFbphz8U/PUaxCqalFH09SQ9m0PZKYhCmaNPfoah5HLbVAVp+C/1uomfoNxdrdDd9ErbrX6RY60k6Oilyn+2ALWbx6NKo09FEMScZau1sirMgtEXVQbxJkdEONegZinU45fRn14fpgvk6+DJ7xEChfQO58bWo0zdR9fwOlssLKTZ/C3EpnS6EeLwrRf0WOcZ/v5XqvVNMd3casI1qxvYR1iTYMbWNJFPOjTa9eo4xa85euvPlXbtJlQh1XwpN95ZCbSHVbQ2bdi7sVnIt1VfwKv2+h0jVVjHnuebduean56jSsbackQyBLZ+mPYC6cg4jeetuz9JxRTkjKX8nynTszaS7GffBto+mx2C7v4ruJq2Ad+nYmUF3m89AtOlI7Ec3dSNg2krb7zCtraGb+h/gZToGvkg3qV0QfTp+KGS45+6BQyJtN8Ph/q0M98BqeJuO6/fXM9SCA8DJpOP+VQxReBAhgoVUbwXhdOXiFDpdm38PvE4H7j60mYbhU/dWI+p0tXNqgLbD2UUIc4TqEMJ0efcobbk3PoZTdVpk7wEqZkLj8xV3krmLmqdccI/Lw4/B9Kj89kuY8sre//V2cvjs4yfGx8DF0NPUGLgYtKPhw7sCbCv8Iv+OZPh8Pp/P5/P5fD6fz+fz+Xy+/2B/A8sPXh9CJWVqAAAAAElFTkSuQmCC
+    mediatype: image/png
+  install:
+    spec:
+      clusterPermissions:
+      - rules:
+        - apiGroups:
+          - ''
+          resources:
+          - namespaces
+          verbs:
+          - get
+        - apiGroups:
+          - ''
+          resources:
+          - secrets
+          verbs:
+          - '*'
+        - apiGroups:
+          - ''
+          resources:
+          - events
+          verbs:
+          - create
+        - apiGroups:
+          - lenovo-5gc.com
+          resources:
+          - lenovoamfs
+          - lenovoamfs/status
+          - lenovoamfs/finalizers
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - ''
+          resources:
+          - serviceaccounts
+          - services
+          verbs:
+          - '*'
+        - apiGroups:
+          - apps
+          resources:
+          - deployments
+          verbs:
+          - '*'
+        - apiGroups:
+          - authentication.k8s.io
+          resources:
+          - tokenreviews
+          verbs:
+          - create
+        - apiGroups:
+          - authorization.k8s.io
+          resources:
+          - subjectaccessreviews
+          verbs:
+          - create
+        serviceAccountName: default
+      deployments:
+      - name: operator-amf-controller-manager
+        spec:
+          replicas: 1
+          selector:
+            matchLabels:
+              control-plane: controller-manager
+          strategy: {}
+          template:
+            metadata:
+              labels:
+                control-plane: controller-manager
+            spec:
+              containers:
+              - args:
+                - --secure-listen-address=0.0.0.0:8443
+                - --upstream=http://127.0.0.1:8080/
+                - --logtostderr=true
+                - --v=10
+                image: registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:d3c0a8074bdee279bacdb913f4892023b60fc00b21a2bd8d505d46473e21c933
+                name: kube-rbac-proxy
+                ports:
+                - containerPort: 8443
+                  name: https
+                resources: {}
+              - args:
+                - --metrics-addr=127.0.0.1:8080
+                - --enable-leader-election
+                - --leader-election-id=operator-amf
+                image: docker.io/maowei3/operator5gcore@sha256:654b78a2539a006bebd473ae0bb82b1e5aa3b2a41916ee406e8438c3594fc35f
+                name: manager
+                resources:
+                  limits:
+                    cpu: 100m
+                    memory: 90Mi
+                  requests:
+                    cpu: 100m
+                    memory: 60Mi
+              terminationGracePeriodSeconds: 10
+      permissions:
+      - rules:
+        - apiGroups:
+          - ''
+          resources:
+          - configmaps
+          verbs:
+          - get
+          - list
+          - watch
+          - create
+          - update
+          - patch
+          - delete
+        - apiGroups:
+          - ''
+          resources:
+          - events
+          verbs:
+          - create
+          - patch
+        serviceAccountName: default
+    strategy: deployment
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - xinkui1@lenovo.com
+  links:
+  - name: Operator Amf
+    url: https://operator-amf.domain
+  maturity: alpha
+  provider:
+    name: lenovo_open5gcore
+  version: 0.0.1
+  relatedImages:
+  - name: operator5gcore-654b78a2539a006bebd473ae0bb82b1e5aa3b2a41916ee406e8438c3594fc35f-annotation
+    image: docker.io/maowei3/operator5gcore@sha256:654b78a2539a006bebd473ae0bb82b1e5aa3b2a41916ee406e8438c3594fc35f
+  - name: kube-rbac-proxy
+    image: registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:d3c0a8074bdee279bacdb913f4892023b60fc00b21a2bd8d505d46473e21c933
+  - name: manager
+    image: docker.io/maowei3/operator5gcore@sha256:654b78a2539a006bebd473ae0bb82b1e5aa3b2a41916ee406e8438c3594fc35f
