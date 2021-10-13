@@ -11,7 +11,7 @@ metadata:
     description: Turbonomic Workload Automation for Multicloud simultaneously optimizes performance, compliance, and cost in real-time. Workloads are precisely resourced, automatically, to perform while satisfying business constraints.
     repository: https://github.com/turbonomic/t8c-install/tree/master/operator
     support: Turbonomic, Inc.
-  name: t8c-operator.v42.2.0
+  name: t8c-certified-jinh.v42.2.0
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -197,5 +197,5 @@ spec:
   maturity: alpha
   provider:
     name: Turbonomic, Inc.
-  replaces: t8c-operator.v42.1.0
+      #  replaces: t8c-operator.v42.1.0
   version: 42.2.0
