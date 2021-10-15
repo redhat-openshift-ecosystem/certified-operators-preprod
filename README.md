@@ -22,6 +22,7 @@ A pull request with a new operator bundle needs to follow given rules to pass a 
 
 Rules mentioned above are always followed when pull request is opened using CI pipeline.
 
+
 ## Directory structure
 This repository contains an `operator` directory where all certified operators
 are stored. Each operator has its directory with its package name. Inside the directory,
