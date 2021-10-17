@@ -68,7 +68,7 @@ metadata:
     description: Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
     repository: https://github.com/rhm-samples/node-red-operator/
     support: Refer Readme- https://github.com/rhm-samples/node-red-operator/issues.
-  name: node-red-operator.v0.0.3
+  name: tc-node-red-operator
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
