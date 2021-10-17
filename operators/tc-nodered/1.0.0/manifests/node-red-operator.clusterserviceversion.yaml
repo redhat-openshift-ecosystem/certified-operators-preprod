@@ -334,7 +334,7 @@ spec:
                                    | To specify your own secret, set the following property in base64 encoding.
                                    | Note- the secret should not have a newline or whitespace.
                                    | If you want to disable encryption of credentials, set this property to 'false'.
-        
+
     ----------
     
     
@@ -358,7 +358,7 @@ spec:
     ibm_s3.api_key                 | Bucket API Key
     ibm_s3.auth_endpoint           | Bucket Authentication Endpoint
     ibm_s3.resource_crn            | Bucket Rescource
-        
+
     ----------
     
    
@@ -376,7 +376,7 @@ spec:
     ibm_s3.api_key                 | Bucket API Key
     ibm_s3.auth_endpoint           | Bucket Authentication Endpoint
     ibm_s3.resource_crn            | Bucket Rescource
-        
+
     ----------
 
 
