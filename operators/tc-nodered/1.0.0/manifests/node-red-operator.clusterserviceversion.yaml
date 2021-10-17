@@ -322,17 +322,17 @@ spec:
     size                           | Number of instances of Node-RED
     imagePullSecrets               | Secret if the image is private
     persistentvolume.enabled       | If volume is to be mounted at /data
-    persistentvolume.storageclass  | Storage class of the Persistent Volume of type ReadWriteMany 
+    persistentvolume.storageclass  | Storage class of the Persistent Volume of type ReadWriteMany
     persistentvolume.accessmode    | The accessMode of the Persistent Volume. This should be of type ReadWriteMany.
     persistentvolume.size          | Size of the volume in Mi or Gi
-    adminpassword                  | Default password is **password**. 
-                                   | To password protect the Node-RED editor and admin API. 
-                                   | Give the bcrypt hash of the password. 
+    adminpassword                  | Default password is **password**.
+                                   | To password protect the Node-RED editor and admin API.
+                                   | Give the bcrypt hash of the password.
                                    | See http://nodered.org/docs/security.html#generating-the-password-hash
                                    |
-    secretkey                      | By default, credentials are encrypted in storage using a generated key. 
-                                   | To specify your own secret, set the following property in base64 encoding. 
-                                   | Note- the secret should not have a newline or whitespace. 
+    secretkey                      | By default, credentials are encrypted in storage using a generated key.
+                                   | To specify your own secret, set the following property in base64 encoding.
+                                   | Note- the secret should not have a newline or whitespace.
                                    | If you want to disable encryption of credentials, set this property to 'false'.
         
     ----------
@@ -345,12 +345,12 @@ spec:
     -----
       Spec                         |            Details
     -------------------------------|-----------------------------
-    backup.schedule                | Set this value based on the type of backup you opt. 
-                                   | There are two types of backup available: 
+    backup.schedule                | Set this value based on the type of backup you opt.
+                                   | There are two types of backup available:
                                    | 1. One Time Backup:
-                                   |    For this type of backup the value of backup.schedule should be left empty or null. 
+                                   |    For this type of backup the value of backup.schedule should be left empty or null.
                                    | 2. Scheduled Backup:
-                                   |    For this type of backup provide Cronjob schedule expression 
+                                   |    For this type of backup provide Cronjob schedule expression
                                    |    (e.g. "*/30 * * * *" to take backup after every 30 minutes) as a value for backup.schedule
                                    |
     ibm_s3.bucket_name             | IBM S3 storage bucket name
@@ -371,7 +371,7 @@ spec:
       Spec                         |            Details
     -------------------------------|-----------------------------
     restore_file_name              | Name of the backup file in S3 bucket which needs to be restored
-    ibm_s3.bucket_name             | IBM S3 storage bucket name 
+    ibm_s3.bucket_name             | IBM S3 storage bucket name
     ibm_s3.endpoint                | Bucket Endpoint
     ibm_s3.api_key                 | Bucket API Key
     ibm_s3.auth_endpoint           | Bucket Authentication Endpoint
