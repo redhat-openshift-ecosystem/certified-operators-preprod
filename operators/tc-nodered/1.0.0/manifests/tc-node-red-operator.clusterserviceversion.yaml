@@ -294,7 +294,6 @@ spec:
   provider: 
     name: IBM-Edge
   version: 0.0.3
-  replaces: node-red-operator.v0.0.2
   description: |
     Node-RED is a flow-based programming tool, originally developed by IBM's Emerging Technology Services team and now a part of the JS Foundation.
     
