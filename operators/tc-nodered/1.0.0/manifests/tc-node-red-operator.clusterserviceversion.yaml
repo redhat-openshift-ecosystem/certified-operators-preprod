@@ -383,4 +383,3 @@ spec:
     -----
 
     Once the Node-RED pod is ready, you can access the URL to the dashboard on the route path. The credentails to dashboard is admin and the password set in the "adminpassword" field.
-    
