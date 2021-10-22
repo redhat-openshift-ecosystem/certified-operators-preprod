@@ -181,7 +181,7 @@ spec:
           - anyuid
           verbs:
           - use
-        serviceAccountName: node-red-operator  
+        serviceAccountName: node-red-operator
       permissions:
       - rules:
         - apiGroups:
@@ -291,12 +291,12 @@ spec:
   - email: edge@us.ibm.com
     name: IBM-Edge
   maturity: alpha
-  provider: 
+  provider:
     name: IBM-Edge
   version: 0.0.3
   description: |
     Node-RED is a flow-based programming tool, originally developed by IBM's Emerging Technology Services team and now a part of the JS Foundation.
-    
+
          **How to get the Application Images from registry?**
     -----
     - First Login to redhat catalogue webpage using your credentials.
@@ -335,10 +335,10 @@ spec:
                                    | If you want to disable encryption of credentials, set this property to 'false'.
 
     ----------
-    
-    
+
+
     **NOTE** For Backup feature its required that the NodeRed is deployed with a Persistent Volume of type RedWriteMany.
-    
+
     ----------
     **Node-RED Backup CR Spec Details**
     -----
@@ -359,10 +359,10 @@ spec:
     ibm_s3.resource_crn            | Bucket Rescource
 
     ----------
-    
-   
+
+
     **NOTE** For Restore feature its required that the NodeRed is deployed with a Persistent Volume of type RedWriteMany.
-    
+
     ----------
 
     **Node-RED Restore CR Spec Details**
@@ -381,5 +381,5 @@ spec:
 
     **Logging into the Node-RED dashboard**
     -----
-    
+
     Once the Node-RED pod is ready, you can access the URL to the dashboard on the route path. The credentails to dashboard is admin and the password set in the "adminpassword" field.
