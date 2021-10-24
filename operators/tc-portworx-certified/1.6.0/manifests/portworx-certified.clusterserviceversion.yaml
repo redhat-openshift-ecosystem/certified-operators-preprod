@@ -35,7 +35,7 @@ metadata:
               "portworx.io/is-openshift": "true"
             }
           },
-          "spec": {"foo": "bar"}
+          "spec": {}
         },
         {
           "apiVersion": "core.libopenstorage.org/v1",
@@ -44,7 +44,7 @@ metadata:
             "name": example",
             "namespace": "test-operator"
           },
-          "spec": {"foo": "bar"}
+          "spec": {}
         }
       ]
 spec:
