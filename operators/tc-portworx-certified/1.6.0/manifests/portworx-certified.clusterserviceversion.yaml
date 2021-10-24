@@ -39,7 +39,7 @@ metadata:
         },
         {
           "apiVersion": "core.libopenstorage.org/v1",
-          "kind": StorageNode",
+          "kind": "StorageNode",
           "metadata": {
             "name": example",
             "namespace": "test-operator"
