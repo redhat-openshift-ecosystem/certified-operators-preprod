@@ -10,7 +10,7 @@ metadata:
     containerImage: portworx/px-operator:1.6.0-dev
     repository: https://github.com/libopenstorage/operator
     createdAt: 2021-09-22T08:00:00Z
-    support: Portworx, Inc
+    support: "Portworx, Inc"
     certified: "true"
     operatorframework.io/initialization-resource: |-
       {
