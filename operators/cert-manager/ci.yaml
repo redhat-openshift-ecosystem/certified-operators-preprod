@@ -1,7 +1,3 @@
 ---
-updateGraph: semver-mode
-
-addReviewers: true
-reviewers:
-  - wallrj
-  - jakexks
+cert_project_id: "0aff914431ba4983983fc4e91fb15740"
+merge: false
