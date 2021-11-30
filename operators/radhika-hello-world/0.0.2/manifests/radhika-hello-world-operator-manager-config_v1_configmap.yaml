@@ -14,4 +14,4 @@ data:
       resourceName: cde535a8.opdev.io
 kind: ConfigMap
 metadata:
-  name: radhika-hello-world-operator-manager-config
+  name: hello-world-operator-manager-config
