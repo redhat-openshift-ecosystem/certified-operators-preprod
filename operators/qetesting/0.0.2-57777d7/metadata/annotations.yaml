@@ -12,3 +12,4 @@ annotations:
   operators.operatorframework.io.metrics.project_layout: go.kubebuilder.io/v3
   operators.operatorframework.io.test.config.v1: tests/scorecard/
   operators.operatorframework.io.test.mediatype.v1: scorecard+v1
+  
