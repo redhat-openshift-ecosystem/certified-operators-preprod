@@ -18,7 +18,7 @@ metadata:
     capabilities: Basic Install
     operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-  name: qetesting.0.0.2-83a9fc9
+  name: qetesting.0.0.4
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -193,7 +193,8 @@ spec:
   provider:
     name: Red Hat Ecosystem Engineering
     url: github.com/opdev
-  version: 0.0.2-83a9fc9
+  replaces: qetesting.0.0.2
+  version: 0.0.4
   relatedImages:
   - name: kube-rbac-proxy
     image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
