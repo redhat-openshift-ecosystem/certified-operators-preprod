@@ -193,6 +193,7 @@ spec:
   provider:
     name: Red Hat Ecosystem Engineering
     url: github.com/opdev
+  replaces: qetesting.0.0.2
   version: 0.0.4
   relatedImages:
   - name: kube-rbac-proxy
