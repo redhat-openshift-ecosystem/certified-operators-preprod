@@ -18,8 +18,8 @@ metadata:
     capabilities: Basic Install
     operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-    marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/crunchy-postgres-operator-rhmp/pricing?utm_source=openshift_console
-    marketplace.openshift.io/support-workflow: https://marketplace.redhat.com/en-us/operators/crunchy-postgres-operator-rhmp/support?utm_source=openshift_console
+    marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console
+    marketplace.openshift.io/support-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/support?utm_source=openshift_console
 spec:
   displayName: Crunchy Postgres for Kubernetes
   name: qetesting-rhmp.0.0.2
