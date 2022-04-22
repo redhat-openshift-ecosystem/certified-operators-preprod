@@ -21,10 +21,6 @@ metadata:
     marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console
     marketplace.openshift.io/support-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/support?utm_source=openshift_console
 spec:
-  displayName: Crunchy Postgres for Kubernetes
-  name: qetesting-rhmp.0.0.2
-  namespace: placeholder
-spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
