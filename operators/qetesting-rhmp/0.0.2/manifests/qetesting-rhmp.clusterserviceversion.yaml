@@ -20,8 +20,8 @@ metadata:
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
     marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console
     marketplace.openshift.io/support-workflow: https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/support?utm_source=openshift_console
-    name: qetesting-rhmp.0.0.2
-    namespace: placeholder
+  name: qetesting-rhmp.0.0.2
+  namespace: placeholder
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
