@@ -20,7 +20,7 @@ metadata:
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
     olm.skipRange: "0.0.0"
     marketplace.openshift.io/remote-workflow: 'https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console'
-    marketplace.openshift.io/support-workflow: 'https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console'
+    marketplace.openshift.io/support-workflow: 'https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/support?utm_source=openshift_console'
   name: qetesting.0.0.3
   namespace: placeholder
 spec:
