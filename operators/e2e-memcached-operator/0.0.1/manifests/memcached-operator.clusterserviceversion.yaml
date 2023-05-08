@@ -153,7 +153,7 @@ spec:
                 env:
                 - name: ANSIBLE_GATHERING
                   value: explicit
-                image: quay.io/rhn_apal/e2e-memcached-operator:0.0.1
+                image: quay.io/rhn_apal/memcached-operator:0.0.1
                 livenessProbe:
                   httpGet:
                     path: /healthz
