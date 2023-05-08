@@ -15,4 +15,4 @@ data:
       resourceName: 839a8d05.opentry.me
 kind: ConfigMap
 metadata:
-  name: memcached-operator-manager-config
+  name: e2e-memcached-operator-manager-config
