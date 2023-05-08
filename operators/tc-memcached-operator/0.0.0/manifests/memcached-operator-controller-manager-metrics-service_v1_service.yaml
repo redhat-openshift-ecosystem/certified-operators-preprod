@@ -5,7 +5,7 @@ metadata:
   creationTimestamp: null
   labels:
     control-plane: controller-manager
-  name: e2e-memcached-operator-controller-manager-metrics-service
+  name: memcached-operator-controller-manager-metrics-service
 spec:
   ports:
   - name: https
