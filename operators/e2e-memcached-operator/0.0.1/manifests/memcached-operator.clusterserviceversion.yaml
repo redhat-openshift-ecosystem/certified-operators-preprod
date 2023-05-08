@@ -7,7 +7,7 @@ metadata:
     createdAt: "2023-05-08T05:15:50Z"
     operators.operatorframework.io/builder: operator-sdk-v1.28.1
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
-  name: e2e-memcached-operator.v0.0.1
+  name: e2e-memcached-operator.0.0.1
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
