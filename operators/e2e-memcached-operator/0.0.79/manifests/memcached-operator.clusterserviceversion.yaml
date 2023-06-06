@@ -11,7 +11,9 @@ metadata:
   name: e2e-memcached-operator.0.0.79
   namespace: placeholder
 spec:
-  relatedImages: []
+  relatedImages: 
+    - name: etcd-operator 
+      image: quay.io/etcd-operator/operator@sha256:d134a9865524c29fcf75bbc4469013bc38d8a15cb5f41acfddb6b9e492f556e4
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
