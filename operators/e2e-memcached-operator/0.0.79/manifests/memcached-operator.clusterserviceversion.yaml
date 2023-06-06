@@ -11,9 +11,11 @@ metadata:
   name: e2e-memcached-operator.0.0.79
   namespace: placeholder
 spec:
-  relatedImages: 
-    - name: etcd-operator 
-      image: quay.io/etcd-operator/operator@sha256:d134a9865524c29fcf75bbc4469013bc38d8a15cb5f41acfddb6b9e492f556e4
+  relatedImages:
+    - name: kube-rbac-proxy 
+      image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:d4883d7c622683b3319b5e6b3a7edfbf2594c18060131a8bf64504805f875522
+    - name: memcached-operator 
+      image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
