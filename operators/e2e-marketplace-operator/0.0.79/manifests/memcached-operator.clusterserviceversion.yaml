@@ -8,8 +8,8 @@ metadata:
     createdAt: "2023-05-08T05:15:50Z"
     operators.operatorframework.io/builder: operator-sdk-v1.28.1
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
-    marketplace.openshift.io/remote-workflow: 'https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/pricing?utm_source=openshift_console'
-    marketplace.openshift.io/support-workflow: 'https://marketplace.redhat.com/en-us/operators/qetesting-rhmp/support?utm_source=openshift_console'
+    marketplace.openshift.io/remote-workflow: 'https://marketplace.redhat.com/en-us/operators/e2e-marketplace-operator/pricing?utm_source=openshift_console'
+    marketplace.openshift.io/support-workflow: 'https://marketplace.redhat.com/en-us/operators/e2e-marketplace-operator/support?utm_source=openshift_console'
   name: e2e-marketplace-operator.0.0.79
   namespace: placeholder
 spec:
