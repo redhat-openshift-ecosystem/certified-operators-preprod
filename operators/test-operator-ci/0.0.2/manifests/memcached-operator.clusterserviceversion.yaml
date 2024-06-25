@@ -16,7 +16,7 @@ metadata:
     createdAt: "2023-05-08T05:15:50Z"
     operators.operatorframework.io/builder: operator-sdk-v1.28.1
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
-  name: test-operator.0.0.2
+  name: test-operator-ci-ci.0.0.2
   namespace: placeholder
 spec:
   relatedImages:
@@ -96,17 +96,17 @@ spec:
           - subjectaccessreviews
           verbs:
           - create
-        serviceAccountName: test-operator-controller-manager
+        serviceAccountName: test-operator-ci-controller-manager
       deployments:
       - label:
           app.kubernetes.io/component: manager
-          app.kubernetes.io/created-by: test-operator
+          app.kubernetes.io/created-by: test-operator-ci
           app.kubernetes.io/instance: controller-manager
           app.kubernetes.io/managed-by: kustomize
           app.kubernetes.io/name: deployment
-          app.kubernetes.io/part-of: test-operator
+          app.kubernetes.io/part-of: test-operator-ci
           control-plane: controller-manager
-        name: test-operator-controller-manager
+        name: test-operator-ci-controller-manager
         spec:
           replicas: 1
           selector:
@@ -164,7 +164,7 @@ spec:
                 - --health-probe-bind-address=:6789
                 - --metrics-bind-address=127.0.0.1:8080
                 - --leader-elect
-                - --leader-election-id=test-operator
+                - --leader-election-id=test-operator-ci
                 env:
                 - name: ANSIBLE_GATHERING
                   value: explicit
@@ -196,7 +196,7 @@ spec:
                     - ALL
               securityContext:
                 runAsNonRoot: true
-              serviceAccountName: test-operator-controller-manager
+              serviceAccountName: test-operator-ci-controller-manager
               terminationGracePeriodSeconds: 10
       permissions:
       - rules:
@@ -231,7 +231,7 @@ spec:
           verbs:
           - create
           - patch
-        serviceAccountName: test-operator-controller-manager
+        serviceAccountName: test-operator-ci-controller-manager
     strategy: deployment
   installModes:
   - supported: false
@@ -247,7 +247,7 @@ spec:
   - ml
   links:
   - name: Memcached Operator
-    url: https://test-operator.domain
+    url: https://test-operator-ci.domain
   maintainers:
   - email: apal@redhat.com
     name: avnish
