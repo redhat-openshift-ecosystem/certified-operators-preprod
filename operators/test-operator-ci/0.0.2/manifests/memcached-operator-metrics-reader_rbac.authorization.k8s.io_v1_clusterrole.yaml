@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/instance: metrics-reader
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: clusterrole
-    app.kubernetes.io/part-of: test-operator
+    app.kubernetes.io/part-of: test-operator-ci
   name: test-operator-metrics-reader
 rules:
 - nonResourceURLs:
