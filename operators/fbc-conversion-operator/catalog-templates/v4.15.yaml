@@ -1,0 +1,13 @@
+---
+defaultChannel: alpha
+name: fbc-conversion-operator
+schema: olm.package
+---
+entries:
+- name: fbc-conversion-operator.0.0.1000
+name: alpha
+package: fbc-conversion-operator
+schema: olm.channel
+---
+image: registry.connect.stage.redhat.com/araszka/fbc-conversion@sha256:24982df318139b277331cf3e2e60d42b87d2f7394826d9b7a9d16a3548e5b635
+schema: olm.bundle
