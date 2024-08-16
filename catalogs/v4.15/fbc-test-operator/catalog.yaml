@@ -15,6 +15,12 @@ name: beta
 package: fbc-test-operator
 schema: olm.channel
 ---
+entries:
+- name: fbc-test-operator.0.0.100
+name: new-channel
+package: fbc-test-operator
+schema: olm.channel
+---
 image: registry.connect.stage.redhat.com/rplesnikfbctest/rplesnikfbctest:0.0.100
 name: fbc-test-operator.0.0.100
 package: fbc-test-operator
