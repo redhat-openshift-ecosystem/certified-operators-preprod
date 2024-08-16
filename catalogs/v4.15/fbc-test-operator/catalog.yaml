@@ -1,23 +1,29 @@
 ---
-defaultChannel: alpha
+defaultChannel: fast-v0.0
 name: fbc-test-operator
 schema: olm.package
 ---
 entries:
 - name: fbc-test-operator.0.0.100
-name: alpha
+name: candidate-v0
 package: fbc-test-operator
 schema: olm.channel
 ---
 entries:
 - name: fbc-test-operator.0.0.100
-name: beta
+name: candidate-v0.0
 package: fbc-test-operator
 schema: olm.channel
 ---
 entries:
 - name: fbc-test-operator.0.0.100
-name: new-channel
+name: fast-v0
+package: fbc-test-operator
+schema: olm.channel
+---
+entries:
+- name: fbc-test-operator.0.0.100
+name: fast-v0.0
 package: fbc-test-operator
 schema: olm.channel
 ---
