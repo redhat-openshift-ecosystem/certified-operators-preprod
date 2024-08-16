@@ -1,22 +1,11 @@
 ---
-defaultChannel: alpha
-name: fbc-test-operator
-schema: olm.package
-
----
-entries:
-- name: fbc-test-operator.0.0.100
-name: alpha
-package: fbc-test-operator
-schema: olm.channel
-
----
-entries:
-- name: fbc-test-operator.0.0.100
-name: beta
-package: fbc-test-operator
-schema: olm.channel
-
----
-image: registry.connect.stage.redhat.com/rplesnikfbctest/rplesnikfbctest:0.0.100
-schema: olm.bundle
+Schema: olm.semver
+GenerateMajorChannels: true
+GenerateMinorChannels: true
+Candidate:
+  Bundles:
+  - Image: registry.connect.stage.redhat.com/rplesnikfbctest/rplesnikfbctest:0.0.100
+Fast:
+  Bundles:
+  - Image: registry.connect.stage.redhat.com/rplesnikfbctest/rplesnikfbctest:0.0.100
+  - Image: registry.connect.stage.redhat.com/rplesnikfbctest/rplesnikfbctest:1.0.100
