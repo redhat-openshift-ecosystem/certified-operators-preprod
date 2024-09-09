@@ -16,7 +16,7 @@ metadata:
     createdAt: "2023-05-08T05:15:50Z"
     operators.operatorframework.io/builder: operator-sdk-v1.28.1
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
-  name: test-operator-gpc.0.0.2
+  name: operator-fbc-gpc.0.0.1
   namespace: placeholder
 spec:
   relatedImages:
@@ -96,17 +96,17 @@ spec:
           - subjectaccessreviews
           verbs:
           - create
-        serviceAccountName: test-operator-gpc-controller-manager
+        serviceAccountName: operator-fbc-gpc-controller-manager
       deployments:
       - label:
           app.kubernetes.io/component: manager
-          app.kubernetes.io/created-by: test-operator-gpc
+          app.kubernetes.io/created-by: operator-fbc-gpc
           app.kubernetes.io/instance: controller-manager
           app.kubernetes.io/managed-by: kustomize
           app.kubernetes.io/name: deployment
-          app.kubernetes.io/part-of: test-operator-gpc
+          app.kubernetes.io/part-of: operator-fbc-gpc
           control-plane: controller-manager
-        name: test-operator-gpc-controller-manager
+        name: operator-fbc-gpc-controller-manager
         spec:
           replicas: 1
           selector:
@@ -164,7 +164,7 @@ spec:
                 - --health-probe-bind-address=:6789
                 - --metrics-bind-address=127.0.0.1:8080
                 - --leader-elect
-                - --leader-election-id=test-operator-gpc
+                - --leader-election-id=operator-fbc-gpc
                 env:
                 - name: ANSIBLE_GATHERING
                   value: explicit
@@ -196,7 +196,7 @@ spec:
                     - ALL
               securityContext:
                 runAsNonRoot: true
-              serviceAccountName: test-operator-gpc-controller-manager
+              serviceAccountName: operator-fbc-gpc-controller-manager
               terminationGracePeriodSeconds: 10
       permissions:
       - rules:
@@ -231,7 +231,7 @@ spec:
           verbs:
           - create
           - patch
-        serviceAccountName: test-operator-gpc-controller-manager
+        serviceAccountName: operator-fbc-gpc-controller-manager
     strategy: deployment
   installModes:
   - supported: false
@@ -247,7 +247,7 @@ spec:
   - ml
   links:
   - name: Memcached Operator
-    url: https://test-operator-gpc.domain
+    url: https://operator-fbc-gpc.domain
   maintainers:
   - email: apal@redhat.com
     name: avnish
