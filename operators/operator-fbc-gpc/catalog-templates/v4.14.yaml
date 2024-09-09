@@ -1,0 +1,9 @@
+schema: olm.semver
+generateMajorChannels: true
+generateMinorChannels: true
+candidate:
+  bundles:
+    - Image: quay.io/certificationqe/operator-fbc-gpc-bundle:1.0.0
+stable:
+  bundles:
+    - Image: quay.io/certificationqe/operator-fbc-gpc-bundle:1.0.0
