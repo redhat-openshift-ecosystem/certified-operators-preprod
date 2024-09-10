@@ -3,7 +3,7 @@ generateMajorChannels: true
 generateMinorChannels: true
 candidate:
   bundles:
-    - Image: quay.io/certificationqe/operator-fbc-gpc-bundle:1.0.0
+    - Image: registry.connect.stage.redhat.com/viksss/operator-fbc-gpc:0.0.1
 stable:
   bundles:
-    - Image: quay.io/certificationqe/operator-fbc-gpc-bundle:1.0.0
+    - Image: registry.connect.stage.redhat.com/viksss/operator-fbc-gpc:0.0.1
