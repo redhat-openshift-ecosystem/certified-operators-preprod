@@ -257,4 +257,4 @@ spec:
     url: www.redhat.com
   version: 1.0.1
   skips:
-     - jinh-fbc-operator.1.0.0
+  - jinh-fbc-operator.1.0.0
