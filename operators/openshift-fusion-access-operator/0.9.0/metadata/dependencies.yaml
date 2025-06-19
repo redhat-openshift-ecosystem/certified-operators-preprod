@@ -1,0 +1,6 @@
+dependencies:
+- type: olm.gvk
+  value:
+    group: kmm.sigs.x-k8s.io
+    kind: Module
+    version: v1beta1
