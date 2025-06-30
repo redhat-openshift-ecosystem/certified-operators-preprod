@@ -54,6 +54,8 @@ Fast:
       registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:55f8685322999fd0e2e11682ddd0a3f698413e9cc03987ccd40b500eae21893d
   - Image: 
       registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:5ed706fc30ade05af30ca73f1e63f3f171a9ff6057d291666babb4a7d52e2e07
+  - Image: 
+      registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:d9e427277b481ea337bb8a3fcbe343fc5befd93be05fa04212e2720cfbfea501
 Stable:
   Bundles:
   - Image: 
@@ -106,3 +108,5 @@ Stable:
       registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:55f8685322999fd0e2e11682ddd0a3f698413e9cc03987ccd40b500eae21893d
   - Image: 
       registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:5ed706fc30ade05af30ca73f1e63f3f171a9ff6057d291666babb4a7d52e2e07
+  - Image: 
+      registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:d9e427277b481ea337bb8a3fcbe343fc5befd93be05fa04212e2720cfbfea501
