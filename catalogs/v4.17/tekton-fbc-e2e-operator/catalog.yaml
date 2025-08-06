@@ -94,6 +94,7 @@ entries:
 - name: tekton-fbc-e2e-operator.0.0.96
 - name: tekton-fbc-e2e-operator.0.0.97
 - name: tekton-fbc-e2e-operator.0.0.98
+- name: tekton-fbc-e2e-operator.0.0.99
   skips:
   - tekton-fbc-e2e-operator.0.0.2
   - tekton-fbc-e2e-operator.0.0.3
@@ -184,6 +185,7 @@ entries:
   - tekton-fbc-e2e-operator.0.0.95
   - tekton-fbc-e2e-operator.0.0.96
   - tekton-fbc-e2e-operator.0.0.97
+  - tekton-fbc-e2e-operator.0.0.98
 name: fast-v0
 package: tekton-fbc-e2e-operator
 schema: olm.channel
@@ -279,6 +281,7 @@ entries:
 - name: tekton-fbc-e2e-operator.0.0.96
 - name: tekton-fbc-e2e-operator.0.0.97
 - name: tekton-fbc-e2e-operator.0.0.98
+- name: tekton-fbc-e2e-operator.0.0.99
   skips:
   - tekton-fbc-e2e-operator.0.0.2
   - tekton-fbc-e2e-operator.0.0.3
@@ -369,6 +372,7 @@ entries:
   - tekton-fbc-e2e-operator.0.0.95
   - tekton-fbc-e2e-operator.0.0.96
   - tekton-fbc-e2e-operator.0.0.97
+  - tekton-fbc-e2e-operator.0.0.98
 name: fast-v0.0
 package: tekton-fbc-e2e-operator
 schema: olm.channel
@@ -464,6 +468,7 @@ entries:
 - name: tekton-fbc-e2e-operator.0.0.96
 - name: tekton-fbc-e2e-operator.0.0.97
 - name: tekton-fbc-e2e-operator.0.0.98
+- name: tekton-fbc-e2e-operator.0.0.99
   skips:
   - tekton-fbc-e2e-operator.0.0.2
   - tekton-fbc-e2e-operator.0.0.3
@@ -554,6 +559,7 @@ entries:
   - tekton-fbc-e2e-operator.0.0.95
   - tekton-fbc-e2e-operator.0.0.96
   - tekton-fbc-e2e-operator.0.0.97
+  - tekton-fbc-e2e-operator.0.0.98
 name: stable-v0
 package: tekton-fbc-e2e-operator
 schema: olm.channel
@@ -649,6 +655,7 @@ entries:
 - name: tekton-fbc-e2e-operator.0.0.96
 - name: tekton-fbc-e2e-operator.0.0.97
 - name: tekton-fbc-e2e-operator.0.0.98
+- name: tekton-fbc-e2e-operator.0.0.99
   skips:
   - tekton-fbc-e2e-operator.0.0.2
   - tekton-fbc-e2e-operator.0.0.3
@@ -739,6 +746,7 @@ entries:
   - tekton-fbc-e2e-operator.0.0.95
   - tekton-fbc-e2e-operator.0.0.96
   - tekton-fbc-e2e-operator.0.0.97
+  - tekton-fbc-e2e-operator.0.0.98
 name: stable-v0.0
 package: tekton-fbc-e2e-operator
 schema: olm.channel
@@ -7130,5 +7138,76 @@ relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
 - image: registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:12dff22c11fe061dfa8c0d4dcc4865882ca206a4d7c7cfdc094164bb3b3ba074
+  name: ""
+schema: olm.bundle
+---
+image: registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:8c819747185b21762c19ba278bc9873f703bb8950485291b146f4156ac8a603f
+name: tekton-fbc-e2e-operator.0.0.99
+package: tekton-fbc-e2e-operator
+properties:
+- type: olm.gvk
+  value:
+    group: cache.quay.io
+    kind: Memcached
+    version: v1alpha1
+- type: olm.package
+  value:
+    packageName: tekton-fbc-e2e-operator
+    version: 0.0.99
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: '[]'
+      capabilities: Basic Install
+      createdAt: "2023-05-08T05:15:50Z"
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "false"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      operators.operatorframework.io/builder: operator-sdk-v1.28.1
+      operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - kind: Memcached
+        name: memcacheds.cache.quay.io
+        version: v1alpha1
+    description: Memcached operator
+    displayName: memcached
+    installModes:
+    - supported: false
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - ai
+    - ml
+    links:
+    - name: Memcached Operator
+      url: https://tekton-fbc-e2e-operator.domain
+    maintainers:
+    - email: apal@redhat.com
+      name: avnish
+    maturity: alpha
+    minKubeVersion: 1.20.0
+    provider:
+      name: RedHat
+      url: www.redhat.com
+relatedImages:
+- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:d4883d7c622683b3319b5e6b3a7edfbf2594c18060131a8bf64504805f875522
+  name: kube-rbac-proxy
+- image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
+  name: memcached-operator
+- image: registry.connect.stage.redhat.com/tekton-automation/tekton-fbc-e2e-operator@sha256:8c819747185b21762c19ba278bc9873f703bb8950485291b146f4156ac8a603f
   name: ""
 schema: olm.bundle
