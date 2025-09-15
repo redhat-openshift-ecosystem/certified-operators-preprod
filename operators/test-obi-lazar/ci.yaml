@@ -1,0 +1,8 @@
+---
+cert_project_id: 68c7efebdaafbc9a821ce4e5
+fbc:
+  enabled: true
+  catalog_mapping:
+    - template_name: semver.yaml
+      catalog_names: ["v4.18", "v4.19", "v4.20"]
+      type: olm.semver
