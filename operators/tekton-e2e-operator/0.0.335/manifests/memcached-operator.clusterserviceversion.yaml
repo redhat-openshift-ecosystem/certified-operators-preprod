@@ -48,7 +48,7 @@ spec:
                 - pods/exec
                 - pods/log
               verbs:
-                - create:
+                - create
                 - delete
                 - get
                 - list
