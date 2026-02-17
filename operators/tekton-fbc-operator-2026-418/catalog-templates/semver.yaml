@@ -36,6 +36,8 @@ Fast:
       registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:ae347f053ab56842b92165d3ef95c60d0283b044136eceb8c8a6880960ad41dc
   - Image: 
       registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:04214bb535db3d4c2c9da9f9b1cfe42ef1532df434cdc1c0fbc79c7b359c1bab
+  - Image: 
+      registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:957df821e02b3bf3af903b8e6ea54534fa4c0ac6c3778eecbe66508849a699c1
 Stable:
   Bundles:
   - Image: 
@@ -70,3 +72,5 @@ Stable:
       registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:ae347f053ab56842b92165d3ef95c60d0283b044136eceb8c8a6880960ad41dc
   - Image: 
       registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:04214bb535db3d4c2c9da9f9b1cfe42ef1532df434cdc1c0fbc79c7b359c1bab
+  - Image: 
+      registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:957df821e02b3bf3af903b8e6ea54534fa4c0ac6c3778eecbe66508849a699c1
