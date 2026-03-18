@@ -2,3 +2,8 @@
 # The catalog for intended distribution.
 # Can be either "certified-operators" or "redhat-marketplace"
 organization: certified-operators
+
+index_image:
+  repository: quay.io/redhat-pending/redhat----certified-operator-index
+  pending_repository: quay.io/redhat-pending/redhat----certified-operator-index-pending
+  public_repository_mirror: registry.stage.redhat.io/redhat/certified-operator-index
