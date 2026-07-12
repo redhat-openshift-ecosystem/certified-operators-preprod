@@ -178,6 +178,7 @@ entries:
 - name: tekton-fbc-operator-2026-418.0.0.194
 - name: tekton-fbc-operator-2026-418.0.0.195
 - name: tekton-fbc-operator-2026-418.0.0.196
+- name: tekton-fbc-operator-2026-418.0.0.197
   skips:
   - tekton-fbc-operator-2026-418.0.0.2
   - tekton-fbc-operator-2026-418.0.0.4
@@ -352,6 +353,7 @@ entries:
   - tekton-fbc-operator-2026-418.0.0.193
   - tekton-fbc-operator-2026-418.0.0.194
   - tekton-fbc-operator-2026-418.0.0.195
+  - tekton-fbc-operator-2026-418.0.0.196
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
@@ -531,6 +533,7 @@ entries:
 - name: tekton-fbc-operator-2026-418.0.0.194
 - name: tekton-fbc-operator-2026-418.0.0.195
 - name: tekton-fbc-operator-2026-418.0.0.196
+- name: tekton-fbc-operator-2026-418.0.0.197
   skips:
   - tekton-fbc-operator-2026-418.0.0.2
   - tekton-fbc-operator-2026-418.0.0.4
@@ -705,6 +708,7 @@ entries:
   - tekton-fbc-operator-2026-418.0.0.193
   - tekton-fbc-operator-2026-418.0.0.194
   - tekton-fbc-operator-2026-418.0.0.195
+  - tekton-fbc-operator-2026-418.0.0.196
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
@@ -884,6 +888,7 @@ entries:
 - name: tekton-fbc-operator-2026-418.0.0.194
 - name: tekton-fbc-operator-2026-418.0.0.195
 - name: tekton-fbc-operator-2026-418.0.0.196
+- name: tekton-fbc-operator-2026-418.0.0.197
   skips:
   - tekton-fbc-operator-2026-418.0.0.2
   - tekton-fbc-operator-2026-418.0.0.4
@@ -1058,6 +1063,7 @@ entries:
   - tekton-fbc-operator-2026-418.0.0.193
   - tekton-fbc-operator-2026-418.0.0.194
   - tekton-fbc-operator-2026-418.0.0.195
+  - tekton-fbc-operator-2026-418.0.0.196
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
@@ -1237,6 +1243,7 @@ entries:
 - name: tekton-fbc-operator-2026-418.0.0.194
 - name: tekton-fbc-operator-2026-418.0.0.195
 - name: tekton-fbc-operator-2026-418.0.0.196
+- name: tekton-fbc-operator-2026-418.0.0.197
   skips:
   - tekton-fbc-operator-2026-418.0.0.2
   - tekton-fbc-operator-2026-418.0.0.4
@@ -1411,6 +1418,7 @@ entries:
   - tekton-fbc-operator-2026-418.0.0.193
   - tekton-fbc-operator-2026-418.0.0.194
   - tekton-fbc-operator-2026-418.0.0.195
+  - tekton-fbc-operator-2026-418.0.0.196
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
@@ -8397,6 +8405,75 @@ relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
 - image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:bb99880676b80fc0ceee1fbd84e3e584dfbdfa058c3a75c5237a7da0d502a8db
+  name: ""
+schema: olm.bundle
+---
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:2be4cd27c66e46d0d635de3bfe4025655372d2979873f48a1d31659adad26483
+name: tekton-fbc-operator-2026-418.0.0.197
+package: tekton-fbc-operator-2026-418
+properties:
+- type: olm.gvk
+  value:
+    group: cache.quay.io
+    kind: Memcached
+    version: v1alpha1
+- type: olm.package
+  value:
+    packageName: tekton-fbc-operator-2026-418
+    version: 0.0.197
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: '[]'
+      capabilities: Basic Install
+      createdAt: "2023-05-08T05:15:50Z"
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "false"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      operators.operatorframework.io/builder: operator-sdk-v1.28.1
+      operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - kind: Memcached
+        name: memcacheds.cache.quay.io
+        version: v1alpha1
+    description: Memcached operator
+    displayName: memcached
+    installModes:
+    - supported: false
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - ai
+    - ml
+    links:
+    - name: Memcached Operator
+      url: https://tekton-fbc-operator-2026-418.domain
+    maintainers:
+    - email: apal@redhat.com
+      name: avnish
+    maturity: alpha
+    minKubeVersion: 1.20.0
+    provider:
+      name: RedHat
+      url: www.redhat.com
+relatedImages:
+- image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
+  name: memcached-operator
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:2be4cd27c66e46d0d635de3bfe4025655372d2979873f48a1d31659adad26483
   name: ""
 schema: olm.bundle
 ---
