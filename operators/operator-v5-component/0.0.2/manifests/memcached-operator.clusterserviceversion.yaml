@@ -1,0 +1,233 @@
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    features.operators.openshift.io/disconnected: 'false'
+    features.operators.openshift.io/fips-compliant: 'false'
+    features.operators.openshift.io/proxy-aware: 'false'
+    features.operators.openshift.io/csi: 'false'
+    features.operators.openshift.io/tls-profiles: 'false'
+    features.operators.openshift.io/token-auth-aws: 'false'
+    features.operators.openshift.io/token-auth-azure: 'false'
+    features.operators.openshift.io/token-auth-gcp: 'false'
+    alm-examples: '[]'
+    capabilities: Basic Install
+    createdAt: '2023-05-08T05:15:50Z'
+    operators.operatorframework.io/builder: operator-sdk-v1.28.1
+    operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
+  name: operator-v5-component.0.0.2
+  namespace: placeholder
+spec:
+  relatedImages:
+    - name: memcached-operator
+      image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+      - kind: Memcached
+        name: memcacheds.cache.quay.io
+        version: v1alpha1
+  description: Memcached operator
+  minKubeVersion: 1.20.0
+  displayName: memcached
+  icon:
+    - base64data: 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'
+      mediatype: image/png
+  install:
+    spec:
+      clusterPermissions:
+        - rules:
+            - apiGroups:
+                - ''
+              resources:
+                - secrets
+                - pods
+                - pods/exec
+                - pods/log
+              verbs:
+                - create
+                - delete
+                - get
+                - list
+                - patch
+                - update
+                - watch
+            - apiGroups:
+                - apps
+              resources:
+                - deployments
+                - daemonsets
+                - replicasets
+                - statefulsets
+              verbs:
+                - create
+                - delete
+                - get
+                - list
+                - patch
+                - update
+                - watch
+            - apiGroups:
+                - cache.quay.io
+              resources:
+                - memcacheds
+                - memcacheds/status
+                - memcacheds/finalizers
+              verbs:
+                - create
+                - delete
+                - get
+                - list
+                - patch
+                - update
+                - watch
+            - apiGroups:
+                - authentication.k8s.io
+              resources:
+                - tokenreviews
+              verbs:
+                - create
+            - apiGroups:
+                - authorization.k8s.io
+              resources:
+                - subjectaccessreviews
+              verbs:
+                - create
+          serviceAccountName: operator-v5-component-controller-manager
+      deployments:
+        - label:
+            app.kubernetes.io/component: manager
+            app.kubernetes.io/created-by: operator-v5-component
+            app.kubernetes.io/instance: controller-manager
+            app.kubernetes.io/managed-by: kustomize
+            app.kubernetes.io/name: deployment
+            app.kubernetes.io/part-of: operator-v5-component
+            control-plane: controller-manager
+          name: operator-v5-component-controller-manager
+          spec:
+            replicas: 1
+            selector:
+              matchLabels:
+                control-plane: controller-manager
+            strategy: {}
+            template:
+              metadata:
+                annotations:
+                  kubectl.kubernetes.io/default-container: manager
+                labels:
+                  control-plane: controller-manager
+              spec:
+                affinity:
+                  nodeAffinity:
+                    requiredDuringSchedulingIgnoredDuringExecution:
+                      nodeSelectorTerms:
+                        - matchExpressions:
+                            - key: kubernetes.io/arch
+                              operator: In
+                              values:
+                                - amd64
+                                - arm64
+                                - ppc64le
+                                - s390x
+                            - key: kubernetes.io/os
+                              operator: In
+                              values:
+                                - linux
+                containers:
+                  - args:
+                      - --health-probe-bind-address=:6789
+                      - --metrics-bind-address=127.0.0.1:8080
+                      - --leader-elect
+                      - --leader-election-id=operator-v5-component
+                    env:
+                      - name: ANSIBLE_GATHERING
+                        value: explicit
+                    image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
+                    livenessProbe:
+                      httpGet:
+                        path: /healthz
+                        port: 6789
+                      initialDelaySeconds: 15
+                      periodSeconds: 20
+                    name: manager
+                    readinessProbe:
+                      httpGet:
+                        path: /readyz
+                        port: 6789
+                      initialDelaySeconds: 5
+                      periodSeconds: 10
+                    resources:
+                      limits:
+                        cpu: 500m
+                        memory: 768Mi
+                      requests:
+                        cpu: 10m
+                        memory: 256Mi
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                      capabilities:
+                        drop:
+                          - ALL
+                securityContext:
+                  runAsNonRoot: true
+                serviceAccountName: operator-v5-component-controller-manager
+                terminationGracePeriodSeconds: 10
+      permissions:
+        - rules:
+            - apiGroups:
+                - ''
+              resources:
+                - configmaps
+              verbs:
+                - get
+                - list
+                - watch
+                - create
+                - update
+                - patch
+                - delete
+            - apiGroups:
+                - coordination.k8s.io
+              resources:
+                - leases
+              verbs:
+                - get
+                - list
+                - watch
+                - create
+                - update
+                - patch
+                - delete
+            - apiGroups:
+                - ''
+              resources:
+                - events
+              verbs:
+                - create
+                - patch
+          serviceAccountName: operator-v5-component-controller-manager
+    strategy: deployment
+  installModes:
+    - supported: false
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+  keywords:
+    - ai
+    - ml
+  links:
+    - name: Memcached Operator
+      url: https://operator-v5-component.domain
+  maintainers:
+    - email: apal@redhat.com
+      name: avnish
+  maturity: alpha
+  provider:
+    name: RedHat
+    url: www.redhat.com
+  version: 0.0.2
