@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.260
+- name: tekton-fbc-operator-2026-418.0.0.261
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.260
+- name: tekton-fbc-operator-2026-418.0.0.261
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.260
+- name: tekton-fbc-operator-2026-418.0.0.261
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.260
+- name: tekton-fbc-operator-2026-418.0.0.261
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:7a5b3d630d987aceb058ba852356d7cb65797b99b2c75eb9178a64a6c063819b
-name: tekton-fbc-operator-2026-418.0.0.260
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:11b61be9e4cfc75c9f699ba06974ff75a743e03fff62f33e5d09f117b1bfb2c2
+name: tekton-fbc-operator-2026-418.0.0.261
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.260
+    version: 0.0.261
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:7a5b3d630d987aceb058ba852356d7cb65797b99b2c75eb9178a64a6c063819b
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:11b61be9e4cfc75c9f699ba06974ff75a743e03fff62f33e5d09f117b1bfb2c2
   name: ""
 schema: olm.bundle
