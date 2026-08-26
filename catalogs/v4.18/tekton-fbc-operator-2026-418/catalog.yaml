@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.273
+- name: tekton-fbc-operator-2026-418.0.0.274
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.273
+- name: tekton-fbc-operator-2026-418.0.0.274
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.273
+- name: tekton-fbc-operator-2026-418.0.0.274
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.273
+- name: tekton-fbc-operator-2026-418.0.0.274
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:d8e1faf557ba2b3a9a9247a3e3721c05eb817f0c98574c8ec22ecf58233287d4
-name: tekton-fbc-operator-2026-418.0.0.273
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:9398175d0c1b137ea259d4a4cf101f39768b387880ebf8ae89b6edd443ace817
+name: tekton-fbc-operator-2026-418.0.0.274
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.273
+    version: 0.0.274
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:d8e1faf557ba2b3a9a9247a3e3721c05eb817f0c98574c8ec22ecf58233287d4
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:9398175d0c1b137ea259d4a4cf101f39768b387880ebf8ae89b6edd443ace817
   name: ""
 schema: olm.bundle
