@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.300
+- name: tekton-fbc-operator-2026-418.0.0.301
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.300
+- name: tekton-fbc-operator-2026-418.0.0.301
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.300
+- name: tekton-fbc-operator-2026-418.0.0.301
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.300
+- name: tekton-fbc-operator-2026-418.0.0.301
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:05a58691eaff04be448921d62a4e19357afcd715de1ed055f98b519ec3a609b1
-name: tekton-fbc-operator-2026-418.0.0.300
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:03604e1fa0327b174b2d00a5acf9f370dcf7aabc479bfb4ff14abee6772a2ec5
+name: tekton-fbc-operator-2026-418.0.0.301
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.300
+    version: 0.0.301
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:05a58691eaff04be448921d62a4e19357afcd715de1ed055f98b519ec3a609b1
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:03604e1fa0327b174b2d00a5acf9f370dcf7aabc479bfb4ff14abee6772a2ec5
   name: ""
 schema: olm.bundle
