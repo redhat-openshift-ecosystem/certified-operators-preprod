@@ -3,10 +3,6 @@ Schema: olm.semver
 GenerateMajorChannels: true
 GenerateMinorChannels: true
 Fast:
-  Bundles:
-  - Image: 
-      registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:984959c8064b166f8ac4cb01a05bb54175e6b2b2145f4e4a731c94582182cd47
+  Bundles: []
 Stable:
-  Bundles:
-  - Image: 
-      registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:984959c8064b166f8ac4cb01a05bb54175e6b2b2145f4e4a731c94582182cd47
+  Bundles: []
