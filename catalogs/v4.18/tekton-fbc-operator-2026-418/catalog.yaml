@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.311
+- name: tekton-fbc-operator-2026-418.0.0.312
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.311
+- name: tekton-fbc-operator-2026-418.0.0.312
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.311
+- name: tekton-fbc-operator-2026-418.0.0.312
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.311
+- name: tekton-fbc-operator-2026-418.0.0.312
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:700143cb148dc894e2679cebe85bb9a08e1e0021a89e5d73a5f7119233543486
-name: tekton-fbc-operator-2026-418.0.0.311
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:a6ca3a320ace76b72ed4f5e4e7ee72ced01491d103e181c82c75f9d0ab8fc9aa
+name: tekton-fbc-operator-2026-418.0.0.312
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.311
+    version: 0.0.312
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:700143cb148dc894e2679cebe85bb9a08e1e0021a89e5d73a5f7119233543486
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:a6ca3a320ace76b72ed4f5e4e7ee72ced01491d103e181c82c75f9d0ab8fc9aa
   name: ""
 schema: olm.bundle
