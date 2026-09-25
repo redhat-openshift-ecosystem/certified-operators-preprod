@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.324
+- name: tekton-fbc-operator-2026-418.0.0.325
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.324
+- name: tekton-fbc-operator-2026-418.0.0.325
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.324
+- name: tekton-fbc-operator-2026-418.0.0.325
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.324
+- name: tekton-fbc-operator-2026-418.0.0.325
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:117b9d67ef825e77578241801b04d9986f753c1bd9ba38ac89bfe0a489f190c1
-name: tekton-fbc-operator-2026-418.0.0.324
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:2c6a52856d15b09df7ba85a00f5c83ab3f6063ec80e64fe1775e9500ca4c6df4
+name: tekton-fbc-operator-2026-418.0.0.325
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.324
+    version: 0.0.325
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:117b9d67ef825e77578241801b04d9986f753c1bd9ba38ac89bfe0a489f190c1
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:2c6a52856d15b09df7ba85a00f5c83ab3f6063ec80e64fe1775e9500ca4c6df4
   name: ""
 schema: olm.bundle
