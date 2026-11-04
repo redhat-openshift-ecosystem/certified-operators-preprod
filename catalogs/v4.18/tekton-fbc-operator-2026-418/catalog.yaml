@@ -5,31 +5,31 @@ name: tekton-fbc-operator-2026-418
 schema: olm.package
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.337
+- name: tekton-fbc-operator-2026-418.0.0.338
 name: fast-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.337
+- name: tekton-fbc-operator-2026-418.0.0.338
 name: fast-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.337
+- name: tekton-fbc-operator-2026-418.0.0.338
 name: stable-v0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
 entries:
-- name: tekton-fbc-operator-2026-418.0.0.337
+- name: tekton-fbc-operator-2026-418.0.0.338
 name: stable-v0.0
 package: tekton-fbc-operator-2026-418
 schema: olm.channel
 ---
-image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:a3b0bff8de7b884f5e51a41a6507d07d6f2a44400982a03d7769c6ccdf00cb00
-name: tekton-fbc-operator-2026-418.0.0.337
+image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:4339f446c39ac4cc9ed8483db558c7784c9f87ccaf9bdd0cbf24681aa49bdf0a
+name: tekton-fbc-operator-2026-418.0.0.338
 package: tekton-fbc-operator-2026-418
 properties:
 - type: olm.gvk
@@ -40,7 +40,7 @@ properties:
 - type: olm.package
   value:
     packageName: tekton-fbc-operator-2026-418
-    version: 0.0.337
+    version: 0.0.338
 - type: olm.csv.metadata
   value:
     annotations:
@@ -93,6 +93,6 @@ properties:
 relatedImages:
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
-- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:a3b0bff8de7b884f5e51a41a6507d07d6f2a44400982a03d7769c6ccdf00cb00
+- image: registry.connect.stage.redhat.com/tekton-pipeline-automation/tekton-fbc-operator-2026-418@sha256:4339f446c39ac4cc9ed8483db558c7784c9f87ccaf9bdd0cbf24681aa49bdf0a
   name: ""
 schema: olm.bundle
